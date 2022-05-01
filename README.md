@@ -1,3 +1,6 @@
+# Установка всех зависимостей
+После клонирования репозитория с ветки master, в терминале проекта нужно сделать команду "npm install".
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
