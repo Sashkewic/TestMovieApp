@@ -20,7 +20,6 @@ const setVote = (vote) => {
 }
 
 export const Movie = ({ title, poster_path, overview, vote_average, release_date }) => {
-
     const [iconClicked, setClicked] = useState(false);
 
 
