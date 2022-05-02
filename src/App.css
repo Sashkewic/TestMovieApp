@@ -34,6 +34,16 @@ header .logo {
   font-weight: bold;
 }
 
+header .favorites {
+  display: flex;
+  align-items: center;
+}
+
+header .favorites ion-icon {
+  color: red;
+  font-size: 36px;
+}
+
 form {
   position: relative;
 }
@@ -122,6 +132,29 @@ button[type="submit"]:hover {
   transform: translateY(0%);
 }
 
+.favorite {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.favorite ion-icon {
+  font-size: 24px;
+}
+
+.favorite ion-icon:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.favorite ion-icon[name="heart-outline"] {
+  color: red;
+}
+
+.favorite ion-icon[name="heart-sharp"] {
+  color: red;
+}
+
 .tag {
   background-color: #22254b;
   padding: 10px;
@@ -157,7 +190,7 @@ button[type="submit"]:hover {
 .page-number {
   margin: 10px;
   background: #6f75bd;
-  border-radius: 10%;
+  border-radius: 5px;
   padding: 10px;
 }
 
@@ -167,12 +200,16 @@ button[type="submit"]:hover {
   font-size: 20px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   header {
     flex-direction: column;
   }
 
-  .logo {
-    margin-bottom: 15px;
+  header .favorites {
+    margin: 15px 0;
+  }
+
+  .pagination-list {
+    flex-direction: column;
   }
 }
